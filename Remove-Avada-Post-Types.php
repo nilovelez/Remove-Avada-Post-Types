@@ -28,7 +28,7 @@ function unregister_avada_post_types(){
 
 	
 }
-add_action( 'init', array( $this, 'unregister_avada_post_types' ) );
+add_action( 'wp_loaded', 'unregister_avada_post_types');
 
 /*
 add_image_size( 'blog-large', 669, 272, true );
